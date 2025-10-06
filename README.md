@@ -6,12 +6,12 @@ Implementation of sample-size adjusted confidence thresholds for multi-criteria 
 
 This repository contains code supporting:
 
-Title: SSUAP: A Transferable Protocol for Small-Sample Uncertainty Assessment in Multi-Criteria Environmental Evaluation
+**Title:** SSUAP: A Transferable Protocol for Small-Sample Uncertainty Assessment in Multi-Criteria Environmental Evaluation
 
-Author: Fatima Zahra Kherazi
-Affiliation: Jiangsu University 
-Status:Manuscript under peer review  
-Year: 2025
+Author: Fatima Zahra Kherazi  
+Affiliation: Jiangsu University  
+Status: Manuscript under peer review  
+Year:2025
 
 For citation details or preprint access, contact: fatima.kherazi@stmail.ujs.edu.cn
 
@@ -31,6 +31,8 @@ SSUAP provides:
 Requires Python 3.8+ with standard packages:
 ```bash
 pip install numpy pandas
+
+
 ## Quick Start
 ```python
 import pandas as pd
