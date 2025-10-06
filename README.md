@@ -31,3 +31,25 @@ SSUAP provides:
 Requires Python 3.8+ with standard packages:
 ```bash
 pip install numpy pandas
+## Quick Start
+```python
+import pandas as pd
+from ssuap import run_ssuap_analysis
+
+# Load your component scores (normalized 0-1)
+data = pd.read_csv('your_data.csv', index_col=0)
+
+# Define base weights
+weights = {
+    'climate_vulnerability': 0.35,
+    'land_use_change': 0.40,
+    'erosion_risk': 0.25
+}
+
+# Run complete analysis
+results = run_ssuap_analysis(data, weights)
+
+# Access results
+print("Thresholds:", results['thresholds'])
+print("Consensus classifications:\n", results['ensemble_agreement'])
+print("Confidence levels:\n", results['confidence_levels'])
